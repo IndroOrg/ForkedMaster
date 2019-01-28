@@ -1,7 +1,7 @@
 pipeline {
  agent any
   environment {
-    PATH = "C:\\Program Files\\Git\\git-bash.exe"
+    PATH = "C:\\Program Files\\Git\\git-bash.exe;%PATH%"
     stages {
         stage('build') {
             steps {
