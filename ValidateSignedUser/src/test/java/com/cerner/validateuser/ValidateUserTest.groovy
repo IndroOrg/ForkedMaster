@@ -13,7 +13,7 @@ private static ValidateUser validateUser
 	}
 	@Test
 	public void testValidUser() {
-		def status = validateUser.validUser("IB041355")
+		def status = validateUser.validUser("IB04135")
 		assertNotNull("Response is null",status)
 		assertEquals("User is not valid",200,status)
 	}
