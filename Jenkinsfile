@@ -7,6 +7,7 @@ pipeline {
             steps {
                 echo "Running buildl"
 				   bat 'mvn install -f ValidateSignedUser'
+				   mycode()
             }
         }
     }
