@@ -1,11 +1,13 @@
 pipeline {
-  agent { label 'windows' }
-   stages {
+    agent { label 'master' }
+    stages {
         stage('build') {
             steps {
-				echo 'Building..>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>............'
+                echo "Hello World!"
+                sh "echo Hello from the shell"
+                sh "hostname"
+                sh "uptime"
             }
         }
-		
     }
-  }
+}
