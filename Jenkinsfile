@@ -1,5 +1,5 @@
 pipeline {
-@Library('indrolibrary')_
+@Library('indrolibrary@master')_
     agent { label 'master' }
     stages {
         stage('build') {
