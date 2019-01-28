@@ -4,7 +4,8 @@ pipeline {
         stage('build') {
             steps {
                 echo "Hello World!"
-				 sh "pwd"
+				   bat 'echo step1:::::::::::::'
+				   bat 'cd ValidateSignedUser'
             }
         }
     }
