@@ -3,9 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                echo "Hello World!"
-				   bat 'echo step1:::::::::::::'
-				   bat 'cd ValidateSignedUser'
+                echo "Running buildl"
 				   bat 'mvn install -f ValidateSignedUser'
             }
         }
