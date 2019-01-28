@@ -1,7 +1,11 @@
 pipeline {
- agent any
-  environment {
-    PATH = "C:\\Program Files\\Git\\git-bash.exe;${env.PATH}"
-   echo "yes:::"
-	}
-}
+  agent { label 'windows' }
+   stages {
+        stage('build') {
+            steps {
+				echo 'Building..>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>............'
+            }
+        }
+		
+    }
+  }
