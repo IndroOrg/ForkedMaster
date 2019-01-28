@@ -1,3 +1,4 @@
+@Library('indrolibrary')
 pipeline {
     agent { label 'master' }
     stages {
