@@ -5,7 +5,6 @@ pipeline {
             steps {
                 echo "Hello World!"
 				cd ValidateSignedUser
-				mvn install
             }
         }
     }
