@@ -6,7 +6,7 @@ pipeline {
                 echo "Hello World!"
 				   bat 'echo step1:::::::::::::'
 				   bat 'cd ValidateSignedUser'
-				   bat 'mvn install'
+				   bat 'mvn install -f ValidateSignedUser'
             }
         }
     }
